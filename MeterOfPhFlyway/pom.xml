@@ -10,28 +10,40 @@
   <groupId>com.iot.phmeter</groupId>
   <artifactId>MeterOfPhFlyway</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
-	<dependencies>
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-            <version>3.2.1</version>
-        </dependency>
+ 
+  <build>
+   <plugins>
+   	<plugin>
+   	<groupId>org.flywaydb</groupId>
+    <artifactId>flyway-maven-plugin</artifactId>
+    <version>6.1.3</version>
+    <configuration>
+    	<driver>com.mysql.jdbc.Driver</driver>
+    	<url>jdbc:mysql://localhost:3306/DbForPhMeter?insecureAuth=true</url>
+    	<user>userOfPhMeterApplication</user>
+    	<password>1234</password>
+    </configuration>
+    <dependencies>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.13</version>
+            <version>8.0.18</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>  
+   	</plugin>
+   </plugins>
+  </build>
+
+	
     
     <properties>
-        <flyway.version>3.2.1</flyway.version>
+        <flyway.version>6.1.3</flyway.version>
         <mysql.driver.version>5.1.13</mysql.driver.version>
         <database.driver>com.mysql.jdbc.Driver</database.driver>
-        <database.url>jdbc:mysql://localhost:3306/customer_dev?autoreconnect=true</database.url>
-        <database.username>admin</database.username>
-        <database.password>p@ssw0rd</database.password>
+        <database.url>jdbc:mysql://localhost:3306/DbForPhMeter?useSSL=false</database.url>
+        <database.username>userOfPhMeterApplication</database.username>
+        <database.password>1234</database.password>
     </properties>
     
 </project>
