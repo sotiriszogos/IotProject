@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
-Implementation-Title: Hibernate Search Quickstart
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Title: MeterOfPhPersistence
+Implementation-Version: 4.3.0.Alpha1
 Built-By: sakes
 Implementation-Vendor-Id: hibernate.org
 Build-Jdk: 1.8.0_231

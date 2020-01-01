@@ -8,19 +8,19 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.MeterOfPhPersistence.PhData;
-import org.MeterOfPhService.PhMeterService;
+import org.MeterOfPhPersistence.Action;
+import org.MeterOfPhService.ActionService;
 
-@Path("/phdata")
-public class PhMeterRest {
+@Path("/action")
+public class ActionRest {
 
 	@Inject
-	PhMeterService phMeterService;
+	ActionService actionService;
 
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
-	public List<PhData> getAllPhData() {
-		return phMeterService.findAll();
+	public List<Action> getAllPhData() {
+		return actionService.findAll();
 	}
-	
+
 }

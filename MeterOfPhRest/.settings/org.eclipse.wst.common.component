@@ -4,6 +4,12 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="MeterOfPhService-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MeterOfPhService/MeterOfPhService">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MeterOfPhPersistence-4.3.0.Alpha1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MeterOfPhPersistence/MeterOfPhPersistence">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="MeterOfPhRest"/>
         <property name="java-output-path" value="/MeterOfPhRest/target/classes"/>
     </wb-module>
