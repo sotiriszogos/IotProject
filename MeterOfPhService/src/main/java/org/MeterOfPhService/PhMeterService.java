@@ -21,4 +21,8 @@ public class PhMeterService extends AbstractService<PhData> {
 	public List<PhData> findAll() {
 		return super.findAll(PhData.class);
 	}
+	
+	public PhData save(PhData phData) {
+		return super.save(phData);
+	}
 }

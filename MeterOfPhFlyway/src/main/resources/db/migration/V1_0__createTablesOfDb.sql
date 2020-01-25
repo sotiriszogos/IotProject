@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS phdata (
  id int auto_increment PRIMARY KEY,
- dateOfMeasure date not null,
- timeOfMeasure time not null,
+ dateOfMeasure date,
+ timeOfMeasure time,
  ph double not null
 )ENGINE=InnoDB DEFAULT CHARSET=UTF8;
 

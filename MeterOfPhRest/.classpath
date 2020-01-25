@@ -20,6 +20,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -31,7 +32,5 @@
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/MeterOfPhPersistence"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MeterOfPhService"/>
-	<classpathentry kind="lib" path="/MeterOfPhPersistence/target/MeterOfPhPersistence-4.3.0.Alpha1.jar"/>
-	<classpathentry kind="lib" path="/MeterOfPhService/target/MeterOfPhService-0.0.1-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

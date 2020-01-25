@@ -41,7 +41,7 @@
         <flyway.version>6.1.3</flyway.version>
         <mysql.driver.version>5.1.13</mysql.driver.version>
         <database.driver>com.mysql.jdbc.Driver</database.driver>
-        <database.url>jdbc:mysql://localhost:3306/DbForPhMeter?useSSL=false</database.url>
+        <database.url>jdbc:mysql://localhost:3306/DbForPhMeter?serverTimezone=Greece</database.url>
         <database.username>userOfPhMeterApplication</database.username>
         <database.password>1234</database.password>
     </properties>
