@@ -7,7 +7,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+<<<<<<< Updated upstream
 @Table (name = "action")
+=======
+@NamedQueries({ @NamedQuery(name = "Action.findAll", query = "SELECT ac FROM Action ac"),
+		@NamedQuery(name = "Action.findByName", query = "SELECT ac FROM Action ac WHERE ac.name = :name"),
+		@NamedQuery(name = "Action.findById", query = "SELECT ac FROM Action ac WHERE ac.id = :id"),
+		@NamedQuery(name = "Action.findEnabledActions", query = "SELECT ac FROM Action ac WHERE ac.enable = true") })
+@Table(name = "actionOfSystem")
+>>>>>>> Stashed changes
 public class Action {
 	
 	@Id
