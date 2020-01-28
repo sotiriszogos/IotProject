@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Built-By: public
-Build-Jdk: 11.0.1
-Created-By: Maven Integration for Eclipse
 Implementation-Title: MeterOfPhPersistence
+Implementation-Version: 4.3.0.Alpha1
+Built-By: sakes
+Implementation-Vendor-Id: hibernate.org
+Build-Jdk: 1.8.0_231
+Created-By: Maven Integration for Eclipse
 Implementation-URL: http://search.hibernate.org
 Implementation-Vendor: hibernate.org
-Implementation-Vendor-Id: hibernate.org
-Implementation-Version: 4.3.0.Alpha1
 
