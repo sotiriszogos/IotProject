@@ -1,5 +1,7 @@
 package org.MeterOfPhRest;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -31,6 +33,8 @@ public class PhMeterRest {
 	@POST
 	@Consumes({MediaType.APPLICATION_JSON})
 	public PhData postPh(PhData phData) {
+		phData.setDate(new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime()));
+		phData.setTime(new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()));
 		return phMeterService.save(phData);
 	}
 }
