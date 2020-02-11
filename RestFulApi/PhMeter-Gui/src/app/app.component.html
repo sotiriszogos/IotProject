@@ -1,0 +1,28 @@
+
+<div class ="ui-g-12 ui-md-6 ">
+<h1>Τιμές Ph που στέλνει ο microcontroller FRDM - K64F :</h1>
+
+<p-table [columns]="cols" [value]="phResults"  [paginator]="true" 
+[rows]="10" [totalRecords]="totalRecords" [loading]="loading">
+<ng-template pTemplate="header" let-columns>
+    <tr>
+        <th *ngFor="let col of columns">
+            {{col.header}}
+        </th>
+    </tr>
+</ng-template>
+<ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+        <td *ngFor="let col of columns">
+            {{rowData[col.field]}}
+        </td>
+    </tr>
+</ng-template>
+</p-table>
+</div>
+
+<div class ="ui-g-12 ui-md-6 ">
+    <h1>Διαθέσιμες ενέργειες :</h1>
+
+    <p-dropdown [options]="actions" [(ngModel)]="selectedAction" optionLabel="Διάλεξε ενέργεια"></p-dropdown>
+</div>
